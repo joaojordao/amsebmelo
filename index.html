@@ -1,75 +1,117 @@
-<!DOCTYPE html>
-<html lang="pt">
+<!doctype html>
+<html lang="pt-PT">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Academia de Música Sebastião e Melo</title>
+  <meta name="description" content="Mais do que uma escola de música: cultura, inclusão e comunidade em Pombal e Leiria. Inscrições abertas.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="Logo Academia de Música Sebastião e Melo" class="logo">
-    <nav>
-      <ul>
-        <li><a href="#quem-somos">Quem Somos</a></li>
-        <li><a href="#oferta">Oferta Educativa</a></li>
-        <li><a href="#inscricoes">Inscrições</a></li>
-        <li><a href="#contactos">Contactos</a></li>
-      </ul>
-    </nav>
+    <div class="container nav" role="navigation" aria-label="Principal">
+      <div class="brand">Academia de Música Sebastião e Melo</div>
+      <nav class="menu">
+        <a href="#home">Início</a>
+        <a href="#quem-somos">Quem Somos</a>
+        <a href="#oferta">Oferta Educativa</a>
+        <a href="#contactos">Contactos</a>
+        <a class="cta" href="https://secretaria.musasoftware.com/CandidatosAMSM/#/home" target="_blank" rel="noopener">Inscrições</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <h1>Bem-vindo à Academia de Música Sebastião e Melo</h1>
-    <p>Mais do que uma escola de música, somos um espaço de cultura, inclusão e comunidade.</p>
-    <a href="https://secretaria.musasoftware.com/CandidatosAMSM/#/home" class="btn">Inscreve-te agora</a>
-    <img src="images/hero-placeholder.jpg" alt="Imagem de destaque" class="hero-img">
-  </section>
+  <main id="home" class="hero">
+    <div class="container">
+      <span class="badge" aria-hidden="true">Música para todos</span>
+      <h1>Bem-vindo à Academia de Música Sebastião e Melo</h1>
+      <p>Mais do que uma escola de música, somos um espaço de cultura, inclusão e comunidade. Aqui, cada aluno encontra o seu lugar, desenvolve o talento e descobre a música como parte da vida.</p>
+      <div class="btns">
+        <a class="btn primary" href="https://secretaria.musasoftware.com/CandidatosAMSM/#/home" target="_blank" rel="noopener">Inscrições Abertas</a>
+        <a class="btn secondary" href="#oferta">Ver Oferta Educativa</a>
+      </div>
+    </div>
+  </main>
 
-  <section id="quem-somos">
-    <h2>Quem Somos</h2>
-    <div class="content">
-      <p>A Academia de Música Sebastião e Melo nasceu para oferecer ensino de qualidade e tornar a música acessível a todos.</p>
-      <p>Queremos ser um espaço aberto à comunidade, promovendo a formação artística e fortalecendo a cultura local.</p>
-      <ul>
-        <li><strong>Missão:</strong> Educar através da música, inspirando talento, disciplina e sensibilidade.</li>
-        <li><strong>Visão:</strong> Ser um polo cultural de referência na região de Pombal e Leiria.</li>
-        <li><strong>Valores:</strong> Inclusão, qualidade, criatividade, comunidade.</li>
-      </ul>
-      <img src="images/quem-somos-placeholder.jpg" alt="Foto da Academia" class="section-img">
+  <section id="quem-somos" class="section">
+    <div class="container grid cols-2">
+      <div>
+        <h2>Quem Somos</h2>
+        <p>A Academia de Música Sebastião e Melo nasceu para oferecer ensino de qualidade e tornar a música acessível a todos. Queremos ser um espaço aberto à comunidade, promovendo a formação artística e fortalecendo a cultura local.</p>
+        <ul class="list">
+          <li><strong>Missão:</strong> Educar através da música, inspirando talento, disciplina e sensibilidade.</li>
+          <li><strong>Visão:</strong> Ser um polo cultural de referência na região de Pombal e Leiria.</li>
+          <li><strong>Valores:</strong> Inclusão, qualidade, criatividade, comunidade.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="card">
+          <h3 style="margin-top:0">Inscrições Abertas</h3>
+          <p>Queres aprender música? A Academia de Música Sebastião e Melo está de portas abertas para todos – desde os mais pequenos até adultos que querem descobrir ou aprofundar o talento musical.</p>
+          <p><a class="btn primary" href="https://secretaria.musasoftware.com/CandidatosAMSM/#/home" target="_blank" rel="noopener">Fazer Inscrição</a></p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="oferta">
-    <h2>Oferta Educativa</h2>
-    <ul>
-      <li>Cursos livres e iniciação musical (a partir dos 5 anos)</li>
-      <li>Ensino articulado com escolas da região</li>
-      <li>Instrumentos e canto: piano, guitarra, violino, violoncelo, flauta, clarinete, saxofone, trompete, trombone, percussão, tuba, canto, entre outros</li>
-      <li>Prática em conjunto: orquestra, coros infantis e juvenis, música de câmara</li>
-    </ul>
-    <img src="images/oferta-placeholder.jpg" alt="Alunos em prática musical" class="section-img">
+  <section id="oferta" class="section alt">
+    <div class="container">
+      <h2>Oferta Educativa</h2>
+      <div class="grid cols-2">
+        <div>
+          <p><strong>Na Academia oferecemos:</strong></p>
+          <ul class="list">
+            <li>Cursos livres e iniciação musical (a partir dos 5 anos)</li>
+            <li>Ensino articulado com escolas da região</li>
+            <li>Instrumentos e canto: piano, guitarra, violino, violoncelo, flauta, clarinete, saxofone, trompete, trombone, percussão, tuba, canto, entre outros</li>
+            <li>Prática em conjunto: orquestra, coros infantis e juvenis, música de câmara</li>
+          </ul>
+        </div>
+        <div>
+          <div class="card" role="img" aria-label="Ilustração abstrata de notas musicais">
+            <p style="margin:0 0 .5rem 0;"><strong>Música para todos</strong></p>
+            <p>Aberto a todas as idades e níveis. Acompanhamento individual e prática em conjunto.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="inscricoes">
-    <h2>Inscrições Abertas</h2>
-    <p>Queres aprender música? A Academia de Música Sebastião e Melo está de portas abertas para todos – desde os mais pequenos até adultos que querem descobrir ou aprofundar o talento musical.</p>
-    <a href="https://secretaria.musasoftware.com/CandidatosAMSM/#/home" class="btn">Faz a tua inscrição</a>
-    <img src="images/inscricoes-placeholder.jpg" alt="Imagem de inscrição" class="section-img">
+  <section id="contactos" class="section">
+    <div class="container grid cols-2">
+      <div>
+        <h2>Contactos</h2>
+        <p><strong>Morada</strong><br>Rua do Barreiro, 26<br>3105-102 GUIA – POMBAL<br>Portugal</p>
+        <p><strong>Email</strong><br><a href="mailto:Academiademusicasebastiaoemelo@gmail.com">Academiademusicasebastiaoemelo@gmail.com</a></p>
+        <p><strong>Telefone</strong><br><a href="tel:+351916666242">916&nbsp;666&nbsp;242</a></p>
+      </div>
+      <div>
+        <div class="card">
+          <iframe title="Mapa: Rua do Barreiro 26, Guia, Pombal" src="https://www.google.com/maps?q=Rua%20do%20Barreiro%2026%2C%20Guia%2C%20Pombal%2C%20Portugal&output=embed" width="100%" height="300" style="border:0;border-radius:10px" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="contactos">
-    <h2>Contactos</h2>
-    <p><strong>Morada:</strong> Rua do Barreiro, 26<br>3105-102 GUIA – POMBAL, Portugal</p>
-    <p><strong>Email:</strong> Academiademusicasebastiaoemelo@gmail.com</p>
-    <p><strong>Telefone:</strong> 916666242</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3133.047!2d-8.63!3d39.91!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22725a58c5c3%3A0x123456789!2sGuia%2C%20Pombal!5e0!3m2!1spt!2spt!4v0000000000"
-      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  </section>
-
-  <footer>
-    <img src="images/logo-alt.png" alt="Logo alternativo" class="footer-logo">
-    <p>&copy; 2025 Academia de Música Sebastião e Melo</p>
+  <footer class="footer section" role="contentinfo">
+    <div class="container">
+      <div class="cols">
+        <div>
+          <strong>Academia de Música Sebastião e Melo</strong><br>
+          Rua do Barreiro, 26 — 3105-102 GUIA – POMBAL, Portugal
+        </div>
+        <div>
+          <strong>Contactos</strong><br>
+          <a href="mailto:Academiademusicasebastiaoemelo@gmail.com">Academiademusicasebastiaoemelo@gmail.com</a><br>
+          <a href="tel:+351916666242">916 666 242</a>
+        </div>
+        <div>
+          <strong>Inscrições</strong><br>
+          <a href="https://secretaria.musasoftware.com/CandidatosAMSM/#/home" target="_blank" rel="noopener">Submete a tua inscrição</a>
+        </div>
+      </div>
+      <p class="copy">© 2025 Academia de Música Sebastião e Melo</p>
+    </div>
   </footer>
 </body>
 </html>

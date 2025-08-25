@@ -1,72 +1,62 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
+/* Academia de Música Sebastião e Melo — Static Site
+   Simple, accessible, responsive layout using pure CSS (no JS).
+*/
+:root{
+  --brand:#0f766e;
+  --brand-dark:#0b3e3a;
+  --brand-light:#ccf0ec;
+  --accent:#fbbf24;
+  --text:#111827;
+  --muted:#6b7280;
+  --bg:#ffffff;
+  --max:1100px;
+  --radius:14px;
 }
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: #003366;
-  color: #fff;
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  color:var(--text);
+  line-height:1.6;
+  background:#fff;
 }
-
-header .logo {
-  height: 60px;
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:var(--max);margin:0 auto;padding:0 1.2rem}
+header{
+  position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:10
 }
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
+.nav{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0;}
+.brand{font-weight:800;font-size:1.1rem;color:var(--brand-dark)}
+.menu{display:flex;gap:1rem;flex-wrap:wrap}
+.menu a{padding:.5rem .7rem;border-radius:10px}
+.menu a.cta{background:var(--brand);color:#fff;font-weight:700}
+.menu a.cta:hover{filter:brightness(.95)}
+.hero{
+  background:var(--brand-light);
+  min-height:64vh;display:flex;align-items:center
 }
+.hero h1{font-size:clamp(32px,5vw,52px);line-height:1.1;margin:.2rem 0}
+.hero p{font-size:clamp(16px,2.2vw,20px);max-width:60ch}
+.btns{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1rem}
+.btn{display:inline-block;padding:.8rem 1rem;border-radius:10px;font-weight:700}
+.btn.primary{background:var(--brand);color:#fff}
+.btn.secondary{border:2px solid var(--brand);color:var(--brand)}
+.section{padding:3rem 0}
+.section.alt{background:#f7f7f8}
+.section h2{font-size:clamp(24px,3.5vw,34px);margin-top:0}
+.grid{display:grid;gap:1.4rem}
+.grid.cols-2{grid-template-columns:1fr}
+.card{background:#fff;border:1px solid #eee;border-radius:var(--radius);padding:1rem}
+.badge{display:inline-block;background:var(--accent);color:#111827;font-weight:700;padding:.25rem .6rem;border-radius:999px;font-size:.85rem}
+.list{padding-left:1.1rem}
+.footer{background:var(--brand-dark);color:#fff}
+.footer a{color:#fff;text-decoration:underline}
+.footer .cols{display:grid;gap:1rem;grid-template-columns:1fr}
+.copy{text-align:center;opacity:.9;margin-top:1rem;font-size:.9rem}
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.hero {
-  text-align: center;
-  padding: 2rem;
-  background: #f4f4f4;
-}
-
-.hero-img {
-  max-width: 400px;
-  margin-top: 1rem;
-}
-
-section {
-  padding: 2rem;
-}
-
-.section-img {
-  max-width: 100%;
-  margin-top: 1rem;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background: #cc0066;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #003366;
-  color: #fff;
-}
-
-.footer-logo {
-  height: 40px;
-  margin-bottom: 0.5rem;
+/* responsive */
+@media (min-width: 820px){
+  .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+  .nav .menu{gap:1.2rem}
 }
