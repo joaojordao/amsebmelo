@@ -2,9 +2,9 @@
    Simple, accessible, responsive layout using pure CSS (no JS).
 */
 :root{
-  --brand:#0f766e;
-  --brand-dark:#0b3e3a;
-  --brand-light:#ccf0ec;
+  --brand:#239cd9;
+  --brand-dark:#024b6f;
+  --brand-light:#68c8ff;
   --accent:#fbbf24;
   --text:#111827;
   --muted:#6b7280;
