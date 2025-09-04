@@ -215,3 +215,42 @@ header{
   from {opacity: 0.4;}
   to {opacity: 1;}
 }
+
+/* Desktop & larger screens: align vertically */
+#oferta .grid.cols-2 {
+  display: flex;
+  gap: 1.4rem;
+  flex-wrap: wrap;
+  align-items: center;      /* vertical centering */
+}
+
+/* Each column responsive */
+#oferta .grid.cols-2 > div {
+  flex: 1 1 45%;
+  display: flex;            /* allow vertical centering in column */
+  flex-direction: column;
+  justify-content: center;  /* center content vertically */
+}
+
+/* Center the card horizontally in its column */
+#oferta .grid.cols-2 > div:last-child .card {
+  margin: 0 auto;
+}
+
+/* Mobile screens: stack columns */
+@media (max-width: 768px) {
+  #oferta .grid.cols-2 {
+    flex-direction: column;     /* stack columns */
+    align-items: stretch;       /* full width */
+  }
+
+  #oferta .grid.cols-2 > div {
+    flex: 1 1 100%;
+    justify-content: flex-start; /* top-align content */
+    margin-bottom: 1.5rem;      /* spacing between stacked sections */
+  }
+
+  #oferta .grid.cols-2 > div:last-child .card {
+    margin: 0;                  /* remove horizontal centering */
+  }
+}
