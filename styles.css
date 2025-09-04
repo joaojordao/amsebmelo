@@ -254,3 +254,15 @@ header{
     margin: 0;                  /* remove horizontal centering */
   }
 }
+
+.banner-logo {
+  position: fixed;       /* fixed in viewport */
+  bottom: 1rem;          /* distance from bottom */
+  z-index: 1000;         /* make sure it's on top */
+}
+
+.banner-logo img {
+  height: 60px;          /* adjust size as needed */
+  width: auto;           /* keep aspect ratio */
+  display: block;
+}
