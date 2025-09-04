@@ -3,16 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- EDITAR: Título que aparece no ínicio da página -->
   <title>Academia de Música Sebastião e Melo</title>
+
   <link rel="icon" type="image/x-icon" href="/images/logo_cores_favicon.ico">
   <meta name="description" content="Mais do que uma escola de música: cultura, inclusão e comunidade em Pombal e Leiria. Inscrições abertas.">
   <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
 </head>
 <body>
   <header>
     <div class="container nav" role="navigation" aria-label="Principal">
-      <img src="images/logo_cores.png" alt="Logo Academia de Música Sebastião e Melo" class="logo" height="128">
-      <div class="brand">Academia de Música Sebastião e Melo</div>
+      <img src="images/logo_cores.png" alt="Logo Academia de Música Sebastião e Melo" class="logo" height="96">
+      <div class="brand"></div>
+
+      <!-- Hamburger button -->
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+      <!-- EDITAR: Nome dos menus -->
       <nav class="menu">
         <a href="#home">Início</a>
         <a href="#quem-somos">Quem Somos</a>
@@ -23,18 +32,39 @@
     </div>
   </header>
 
-  <main id="home" class="hero">
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- EDITAR: Imagens que aparecem a mover -->
+  <div class="mySlides fade">
+    <img src="images/photo_1.jpg" alt="Foto 1">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/photo_2.JPG" alt="Foto 2">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+  <!-- Now main content comes AFTER the slideshow -->
+  <main id="home" class="hero-banner">
     <div class="container">
+      
+      <!-- EDITAR: Título e texto -->
       <span class="badge" aria-hidden="true">Música para todos</span>
       <h1>Bem-vindo à Academia de Música Sebastião e Melo</h1>
       <p>Mais do que uma escola de música, somos um espaço de cultura, inclusão e comunidade. Aqui, cada aluno encontra o seu lugar, desenvolve o talento e descobre a música como parte da vida.</p>
       <div class="btns">
-        <a class="btn primary" href="https://secretaria.musasoftware.com/CandidatosAMSM/#/home" target="_blank" rel="noopener">Inscrições Abertas</a>
+        <a class="btn primary" href="https://secretaria.musasoftware.com/CandidatosAMSM/#/home">Inscrições Abertas</a>
         <a class="btn secondary" href="#oferta">Ver Oferta Educativa</a>
       </div>
     </div>
   </main>
 
+  <!-- EDITAR: A partir daqui é alterar título e textos -->
   <section id="quem-somos" class="section">
     <div class="container grid cols-2">
       <div>
