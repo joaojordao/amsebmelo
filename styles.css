@@ -257,8 +257,6 @@ header{
 
 .banner-logo {
   position: absolute;       
-  bottom: 1rem;          /* distance from bottom */
-  z-index: 1000;         /* make sure it's on top */
 }
 
 .banner-logo img {
